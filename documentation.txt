@@ -1,0 +1,15 @@
+curl --request POST \
+     --url https://cloud.leonardo.ai/api/rest/v1/generations-lcm \
+     --header 'accept: application/json' \
+     --header 'authorization: Bearer <YOUR_API_KEY>' \
+     --header 'content-type: application/json' \
+     --data '
+{
+  "width": 512,
+  "height": 512,
+  "imageDataUrl": "data:image",
+  "prompt": "A blue rose ",
+  "style": "CINEMATIC",
+  "strength": 0.65
+}
+
